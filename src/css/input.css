@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+    background-color: rgba(23, 43, 77, 1);
+  }
+  
+  .header-down {
+    background-color: white;
+  }
+  
+  @media (min-width: 768px) {
+    .header {
+      background-color: rgba(23, 43, 77, 1);
+    }
+    .header-down {
+      background-color: rgba(23, 43, 77, 1);
+    }
+  }
+  

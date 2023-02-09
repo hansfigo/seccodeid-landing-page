@@ -1,0 +1,17 @@
+{
+  "name": "seccodeid-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "amqplib": "^0.10.3",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwind": "^4.0.0"
+  }
+}
