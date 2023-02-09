@@ -2,20 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-.header {
+@layer components {
+    body{
+        font-family: sans-serif;
+    }
+    .card {
+        @apply
+    }
+
+    .header-layout {
+        @apply 
+        fixed w-screen 
+        overflow-hidden
+        text-white shadow-md 
+        md:flex 
+        md:items-center 
+        md:justify-between
+    }
+
+    .navbar-anchor-text{
+        @apply
+        pt-2 
+        duration-500 
+        hover:font-medium
+        hover:text-blue-600
+    }
+    .navbar-button-blue{
+        @apply
+        rounded-md 
+        bg-blue-600 
+        py-1.5 
+        px-3 
+        text-white 
+        duration-500 
+        hover:bg-blue-800
+    }
+    .card-feature{
+        @apply
+        mt-4
+        min-h-[280px]
+        w-[240-px] 
+        min-w-[240px] 
+        max-w-[240px] 
+        overflow-hidden 
+        rounded-xl 
+        bg-white 
+        p-7 
+        shadow-md 
+        md:mt-0 
+        md:mr-4 
+        md:ml-2
+    }
+}
+
+.header-color {
     background-color: rgba(23, 43, 77, 1);
-  }
-  
-  .header-down {
+}
+
+.header-down {
     background-color: white;
-  }
-  
-  @media (min-width: 768px) {
-    .header {
-      background-color: rgba(23, 43, 77, 1);
+}
+
+@media (min-width: 768px) {
+    .header-color {
+        background-color: rgba(23, 43, 77, 1);
     }
+
     .header-down {
-      background-color: rgba(23, 43, 77, 1);
+        background-color: rgba(23, 43, 77, 1);
     }
-  }
-  
+}

@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Seccodeid</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <!-- HEADER -->
-  <div class="header fixed w-screen overflow-hidden text-white shadow-md md:flex md:items-center md:justify-between">
+  <div class="header-color header-layout">
     <div class="flex items-center justify-between p-4">
       <h1 class="text-2xl font-medium uppercase">Seccodeid</h1>
-      <button class="md:hidden">
+      <button id="navbar-anchor"  onclick="Open(this)" class="md:hidden cursor-pointer">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
           class="h-6 w-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -21,17 +22,17 @@
     </div>
     <div class="header-down hidden w-full p-4 text-slate-700 md:flex md:items-center md:justify-between md:text-white">
       <div class="flex flex-col md:block md:items-center">
-        <a class="pt-2 duration-500 hover:font-medium hover:text-blue-600" href="#">forum</a>
-        <a class="pt-4 duration-500 hover:font-medium hover:text-blue-600" href="#">About</a>
-        <a class="pt-4 duration-500 hover:font-medium hover:text-blue-600" href="#">Blog</a>
-        <a class="pt-4 duration-500 hover:font-medium hover:text-blue-600" href="#">Community</a>
-        <a class="pt-4 duration-500 hover:font-medium hover:text-blue-600" href="#">Resources</a>
+        <a class="navbar-anchor-text" href="#">forum</a>
+        <a class="navbar-anchor-text" href="#">About</a>
+        <a class="navbar-anchor-text" href="#">Blog</a>
+        <a class="navbar-anchor-text" href="#">Community</a>
+        <a class="navbar-anchor-text" href="#">Resources</a>
       </div>
       <div class="pt-6 md:pt-0">
         <button
           class="hover: bottom-0 rounded-md border-2 border-blue-600 py-1 px-3 text-blue-500 duration-500 hover:bg-blue-600 hover:text-white">Log
           in</button>
-        <button class="rounded-md bg-blue-600 py-1.5 px-3 text-white duration-500 hover:bg-blue-800">Sign up</button>
+        <button class="navbar-button-blue">Sign up</button>
       </div>
     </div>
   </div>
@@ -63,7 +64,7 @@
             <div
               class="bg-re mx-2 mt-8 flex max-w-3xl flex-col items-center justify-start overflow-x-scroll rounded-lg py-4 md:flex-row">
               <div
-                class="mt-2 min-h-[280px] w-[240-px] min-w-[240px] max-w-[240px] overflow-hidden rounded-xl bg-white p-7 shadow-md md:mt-0 md:mr-4 md:ml-2">
+                class="card-feature">
                 <div class="">
                   <div class="flex">
                     <div class="h-14 w-14 rounded-lg bg-blue-600 p-3 text-white">
@@ -82,7 +83,7 @@
                 </div>
               </div>
               <div
-                class="mt-8 min-h-[280px] min-w-[240px] max-w-[240px] rounded-xl bg-white p-7 shadow-md md:mt-0 md:mr-4">
+                class="card-feature">
                 <div class="">
                   <div class="flex">
                     <div class="h-14 w-14 rounded-lg bg-blue-600 p-3 text-white">
@@ -101,7 +102,7 @@
                 </div>
               </div>
               <div
-                class="mt-8 min-h-[280px] min-w-[240px] max-w-[240px] rounded-xl bg-white p-7 shadow-md md:mt-0 md:mr-4">
+                class="card-feature">
                 <div class="">
                   <div class="flex">
                     <div class="h-14 w-14 rounded-lg bg-blue-600 p-3 text-white">
@@ -120,7 +121,7 @@
                 </div>
               </div>
               <div
-                class="mt-8 min-h-[280px] min-w-[240px] max-w-[240px] rounded-xl bg-white p-7 shadow-md md:mt-0 md:mr-4">
+                class="card-feature">
                 <div class="">
                   <div class="flex">
                     <div class="h-14 w-14 rounded-lg bg-blue-600 p-3 text-white">
@@ -132,8 +133,8 @@
                     </div>
                   </div>
                   <div>
-                    <p class="pt-4 text-lg font-semibold">Realtime Chat App</p>
-                    <p class="pt-2 text-left text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet in
+                    <p class="pt-4 text-left text-lg font-semibold">Realtime Chat App</p>
+                    <p class="pt-2 text-left text-sm ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet in
                       porttitor in sit sem eu, nunc diam. Quis nisi,</p>
                   </div>
                 </div>
