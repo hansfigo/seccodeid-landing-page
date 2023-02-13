@@ -20,6 +20,7 @@
         md:flex 
         md:items-center 
         md:justify-between
+        z-10
     }
 
     .navbar-anchor-text{
