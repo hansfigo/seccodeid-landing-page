@@ -5,13 +5,15 @@ let isClicked = true;
 
 
 function Open() {
-  if (isClicked) {
-    hamburger.classList.remove("hidden");
-    isClicked = false;
-  } else {
-    hamburger.classList.add("hidden");
-    isClicked = true;
-  }
+  hamburger.classList.toggle("h-64")
+  // if (isClicked) {
+  //   hamburger.classList.remove("h-[0px]");
+  //   hamburger.classList.add("h-full");
+  //   isClicked = false;
+  // } else {
+  //   hamburger.classList.add("h-[0px]");
+  //   isClicked = true;
+  // }
 
 }
 

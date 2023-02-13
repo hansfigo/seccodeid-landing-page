@@ -1,10 +1,12 @@
+ @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
     body{
-        font-family: sans-serif;
+        font-family: 'Poppins', sans-serif;
     }
     .card {
         @apply
@@ -23,15 +25,16 @@
     .navbar-anchor-text{
         @apply
         pt-2 
+        mr-4
         duration-500 
-        hover:font-medium
+        font-semibold
         hover:text-blue-600
     }
     .navbar-button-blue{
         @apply
         rounded-md 
         bg-blue-600 
-        py-1.5 
+        py-1.5
         px-3 
         text-white 
         duration-500 

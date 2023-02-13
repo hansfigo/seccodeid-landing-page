@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Seccodeid</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/dist/output.css">
   <script defer src="/public/script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <!-- HEADER -->
-  <div class="header-color header-layout">
+  <div class="text-slate-800 bg-white header-layout">
     <div class="flex items-center justify-between p-4">
       <h1 class="text-2xl font-medium uppercase">Seccodeid</h1>
       <button onclick="Open(this)" class="md:hidden cursor-pointer">
@@ -20,20 +25,24 @@
         </svg>
       </button>
     </div>
-    <div id="navbar-anchor" class="header-down hidden w-full p-4 text-slate-700 md:flex md:items-center md:justify-between md:text-white">
-      <div class="flex flex-col md:block md:items-center">
-        <a class="navbar-anchor-text" href="#">forum</a>
-        <a class="navbar-anchor-text" href="#">About</a>
-        <a class="navbar-anchor-text" href="#">Blog</a>
-        <a class="navbar-anchor-text" href="#">Community</a>
-        <a class="navbar-anchor-text" href="#">Resources</a>
+    <div id="navbar-anchor"
+      class="h-0 transition-all ease-out duration-500 md:transition-none w-full md:flex md:items-center md:justify-between text-slate-800">
+      <div class="px-4 py-2">
+        <div class="flex flex-col transition-all duration-300 ease-out md:block md:items-center">
+          <a class="navbar-anchor-text" href="#">Forum</a>
+          <a class="navbar-anchor-text" href="#">About</a>
+          <a class="navbar-anchor-text" href="#">Blog</a>
+          <a class="navbar-anchor-text" href="#">Community</a>
+          <a class="navbar-anchor-text" href="#">Resources</a>
+        </div>
+        <div class="pt-6 md:pt-0">
+          <button
+            class="hover: bottom-0 rounded-md border-2 border-blue-600 py-1 px-3 text-blue-500 duration-500 hover:bg-blue-600 hover:text-white">Log
+            in</button>
+          <button class="navbar-button-blue">Sign up</button>
+        </div>
       </div>
-      <div class="pt-6 md:pt-0">
-        <button
-          class="hover: bottom-0 rounded-md border-2 border-blue-600 py-1 px-3 text-blue-500 duration-500 hover:bg-blue-600 hover:text-white">Log
-          in</button>
-        <button class="navbar-button-blue">Sign up</button>
-      </div>
+      
     </div>
   </div>
 
@@ -42,15 +51,16 @@
     <div class="min-w-[64rem] max-w-6xl">
       <div class="mt-20 flex justify-center px-8">
         <div class="bg-bl items-center text-center">
-          <h1 class="md:text-6xl text-4xl font-semibold">
+          <h1 class="md:text-6xl text-4xl bg-red font-semibold">
             Seccodeid<br />for <br />
-            Developer
+            <p class="">Developer</p>
           </h1>
           <p class="md:max-w-lg max-w-xs px-4 pt-4 text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Amet enim sapiente pariatur sequi debitis hic</p>
         </div>
       </div>
 
+      <!-- OUR SERVICES -->
       <div class="mt-20 flex justify-center pt-52 pb-52  px-8">
         <div class="bg-bl items-center text-center">
           <h1 class="text-xl font-semibold">Our Feature and Services</h1>
@@ -59,12 +69,11 @@
               Amet enim sapiente pariatur sequi debitis hic</p>
           </div>
 
-          <!-- CARD SERVICES -->
+          <!-- OUR SERVICES CARDS -->
           <div class="flex flex-col items-center">
             <div
               class="bg-re mx-2 mt-8 flex max-w-3xl flex-col items-center justify-start overflow-x-scroll rounded-lg py-4 md:flex-row">
-              <div
-                class="card-feature">
+              <div class="card-feature">
                 <div class="">
                   <div class="flex">
                     <div class="h-14 w-14 rounded-lg bg-blue-600 p-3 text-white">
@@ -82,8 +91,7 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="card-feature">
+              <div class="card-feature">
                 <div class="">
                   <div class="flex">
                     <div class="h-14 w-14 rounded-lg bg-blue-600 p-3 text-white">
@@ -101,8 +109,7 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="card-feature">
+              <div class="card-feature">
                 <div class="">
                   <div class="flex">
                     <div class="h-14 w-14 rounded-lg bg-blue-600 p-3 text-white">
@@ -120,8 +127,7 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="card-feature">
+              <div class="card-feature">
                 <div class="">
                   <div class="flex">
                     <div class="h-14 w-14 rounded-lg bg-blue-600 p-3 text-white">
