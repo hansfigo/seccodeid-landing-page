@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,8 +8,20 @@
     body{
         font-family: 'Poppins', sans-serif;
     }
-    .card {
+    .content-title {
         @apply
+        text-2xl 
+        font-medium
+        md:text-4xl
+    }
+
+    .content-detail{
+        @apply
+        text-[14px]
+        max-w-[240px] 
+        pt-3 
+        sm:max-w-lg 
+        md:text-base
     }
 
     .header-layout {
@@ -28,7 +40,7 @@
         pt-2 
         mr-4
         duration-300 
-        font-semibold
+        font-medium
         hover:text-blue-600
     }
     .navbar-button-blue{
@@ -69,6 +81,16 @@
         pt-2 
         text-left 
         text-sm 
+    }
+
+    .card-partner{
+        @apply
+        mr-4
+        shadow-md 
+        rounded-md 
+        bg-white 
+        min-h-[100px] 
+        min-w-[100px]
     }
 }
 
