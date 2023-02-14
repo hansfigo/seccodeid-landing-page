@@ -46,8 +46,8 @@
         mt-4
         min-h-[280px]
         w-[240-px] 
-        min-w-[240px] 
-        max-w-[240px] 
+        min-w-[230px] 
+        max-w-[230px] 
         overflow-hidden 
         rounded-xl 
         bg-white 
@@ -56,6 +56,19 @@
         md:mt-0 
         md:mr-4 
         md:ml-2
+    }
+    .card-feature-title{
+        @apply
+        pt-4
+        text-lg 
+        font-semibold
+        text-left
+    }
+    .card-feature-detail{
+        @apply
+        pt-2 
+        text-left 
+        text-sm 
     }
 }
 
