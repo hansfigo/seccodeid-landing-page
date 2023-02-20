@@ -181,67 +181,59 @@
               Amet enim sapiente pariatur sequi debitis hic</p>
           </div>
           <!-- EVENT CARD -->
-          <div class="flex flex-wrap flex-col md:flex-row items-center justify-center pt-6">
-            <!-- <div class="card-event">
-              <div class="h-[250px] overflow-hidden">
-                <img class="w-full h-auto" src="/img/events/acara15.jpg" />
-              </div>
-              <div class=" px-4 pb-4">
-                <p class="card-event-title">Learn Laravel Fundamental
-                </p>
-                <div class="flex pt-2 items-center justify-center">
-                  <clock-ic class="pr-1"></clock-ic>
-                  <p class="text-xs">Sunday, 26 September 2023</p>
-                </div>
-              </div>
-            </div>
-            <div class="card-event">
-              <div class="h-[250px] overflow-hidden">
-                <img class="w-full h-auto" src="/img/events/acara14.jpg" />
-              </div>
-              <div class=" px-4 pb-4">
-                <p class="card-event-title">Reverse Engineering from CTF to Real World</p>
-                <div class="flex pt-2 items-center justify-center">
-                  <clock-ic class="pr-1"></clock-ic>
-                  <p class="text-xs">Sunday, 26 September 2023</p>
-                </div>
-              </div>
-            </div>
-            <div class="card-event">
-              <div class="h-[250px] overflow-hidden">
-                <img class="w-full h-auto" src="/img/events/acara13.jpeg" />
-              </div>
-              <div class=" px-4 pb-4">
-                <p class="card-event-title">CYIOT-Talk Forensic Introduction Digital Forensic</p>
-                <div class="flex pt-2 items-center justify-center">
-                  <clock-ic class="pr-1"></clock-ic>
-                  <p class="text-xs">Sunday, 26 September 2023</p>
-                </div>
-              </div>
-            </div>
-            <div class="card-event">
-              <div class="h-[250px] overflow-hidden">
-                <img class="w-full h-auto" src="/img/events/acara12.jpg" />
-              </div>
-              <div class=" px-4 pb-4">
-                <p class="card-event-title">SSI Injection and SSI Backdoor</p>
-                <div class="flex pt-2 items-center justify-center">
-                  <clock-ic class="pr-1"></clock-ic>
-                  <p class="text-xs">Sunday, 26 September 2023</p>
-                </div>
-              </div>
-            </div> -->
+          <div id="event-list" class="flex md:flex-wrap max-h-[760px] duration-300 transition-all overflow-hidden flex-col md:flex-row items-center md:justify-center justify-start pt-6">
             <event-card title="Introduction Sigfox Internet of Things Programming and Network Beginner"
               img="acara15.jpg" date="Friday, 22 July 2022"></event-card>
             <event-card title="Reverse Engineering from CTF to Real World" img="acara14.jpg"
               date="Saturday, 23 April 2022"></event-card>
-                <event-card title="CYIOT-Talk Forensic Introduction Digital Forensic" img="acara13.jpeg"
+            <event-card title="CYIOT-Talk Forensic Introduction Digital Forensic" img="acara13.jpeg"
               date="Saturday, 2 April 2022"></event-card>
+            <event-card title="SSI Injection and SSI Backdoor
+              " img="acara12.jpg" date=" Friday, 1 April 2022"></event-card>
             <event-card title="How Secure and Valuable Your Data" img="acara11.png"
               date="Saturday, 26 March 2022"></event-card>
+            <event-card title="ANNOFEST 2022 | ICT Award | Cyber Security" img="acara10.png"
+              date="4 March - 24 April 2022"></event-card>
+            <event-card title="Menjadi seorang developer bermanfaat" img="acara9.png"
+              date="Saturday, 12 March 2022"></event-card>
+            <event-card title="Android Pentesting (All region sessions)
+            " img="acara8_2.png" date="Saturday, 05 February 2022
+            "></event-card>
+            <event-card title="Learn Linux Pentesting w Hack the Box and Windows Machine Exploitation (Indonesian sessions)
+            " img="acara8_1.png" date="Tuesday, 01 February 2022
+            "></event-card>
+            <event-card title="Learn Linux Pentesting w Hack the Box, Windows Machine and Android Pentesting Exploitation
+            " img="acara8.png" date="Saturday, 05 February 2022
+            "></event-card>
+            <event-card title="OSINT Tips and Trick Technique Hunt Your Target
+            " img="acara7.png" date="Saturday, 27 November 2021
+            "></event-card>
+            <event-card title="Introduction Web Penetration Testing
+            " img="acara6.png" date="Sunday, 14 November 2021
+            "></event-card>
+            <event-card title="Bekerja di Ranah Keamanan Siber
+            " img="acara5.jpg" date="Saturday, 23 October 2021
+            "></event-card>
+            <event-card title="Ethical Hacking
+            " img="acara4.jpg" date="Sunday, 26 September 2021
+            "></event-card>
+            <event-card title="Data Personal Information Security
+            " img="acara3.jpg" date="Saturday, 28 August 2021
+            "></event-card>
+            <event-card title="Webinar Edukasi Keamanan Siber
+            " img="acara2.jpg" date="Saturday, 7 August 2021
+            "></event-card>
+            <event-card title="Learn Laravel Fundamental
+            " img="acara2.jpg" date="Friday, 6 August 2021
+            "></event-card>
           </div>
 
         </div>
+        <div class="w-full flex justify-center">
+          <button  onclick="ShowMore(this)" class="navbar-button-blue">Show More</button>
+
+        </div>
+
       </div>
       <!-- ARTICLE  -->
       <div class=" items-center justify-center pt-52 md:pb-52 px-8">

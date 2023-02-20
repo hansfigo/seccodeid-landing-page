@@ -2,8 +2,11 @@
 const hamburger = document.getElementById("navbar-anchor");
 const hambIcon = document.getElementById("hamb-ic");
 const crossIcon = document.getElementById("cross-ic");
+const eventList = document.getElementById("event-list");
 
 let isClicked = false;
+let isClickedEvent = true;
+
 
 
 function Open() {
@@ -20,15 +23,17 @@ function Open() {
     crossIcon.classList.add("hidden")
     isClicked = false;
   }
-  // if (isClicked) {
-  //   hamburger.classList.remove("h-[0px]");
-  //   hamburger.classList.add("h-full");
-  //   isClicked = false;
-  // } else {
-  //   hamburger.classList.add("h-[0px]");
-  //   isClicked = true;
-  // }
+}
 
+function ShowMore() {
+
+  if (isClickedEvent) {
+    eventList.classList.remove("max-h-[760px]")
+    isClickedEvent = false;
+  }else{
+    eventList.classList.add("max-h-[760px]")
+    isClickedEvent = true;
+  }
 }
 
 class MyElement extends HTMLElement {
