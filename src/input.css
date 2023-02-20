@@ -91,6 +91,22 @@
         bg-white 
         min-h-[100px] 
         min-w-[100px]
+    }.card-event{
+        @apply
+        w-[240px] 
+        min-h-[350px] 
+        max-h-[350px]
+        overflow-hidden 
+        rounded-md 
+        bg-white 
+        shadow-md 
+        md:mt-4 
+        md:mr-4 
+        md:ml-2
+    }
+    .card-event-title{
+        @apply
+        pt-4 font-medium line-clamp-2
     }
 }
 

@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.2",
     "amqplib": "^0.10.3",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",

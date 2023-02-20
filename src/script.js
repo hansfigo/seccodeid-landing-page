@@ -39,15 +39,18 @@ class MyElement extends HTMLElement {
   render() {
     const title = this.getAttribute('title');
     const img = this.getAttribute('img');
+    const date = this.getAttribute('date');
     this.innerHTML = `
-    <div class=" w-[240px] min-h-[250px] overflow-hidden rounded-md bg-white shadow-md md:mt-0 md:mr-4 md:ml-2">
-    <div class="min-h-[250px]">
-    <img class="w-full h-auto" src=${img} alt="" />
+    <div class="card-event">
+    <div class="h-[250px] overflow-hidden">
+      <img class="w-full h-auto" src="/img/events/${img}"/>
     </div>
-
-    <div class="px-4">
-      <p class="pt-4 font-medium">${title}</p>
-      <p class="">Sunday, 26 September 2023</p>
+    <div class=" px-4 pb-4">
+      <p class="card-event-title">${title}</p>
+      <div class="flex pt-2 items-center justify-center">
+        <clock-ic class="pr-1"></clock-ic>
+        <p class="text-xs">${date}</p>
+      </div>
     </div>
   </div>`;
   }
