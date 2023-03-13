@@ -8,6 +8,7 @@
     body{
         font-family: 'Poppins', sans-serif;
     }
+    
     .content-title {
         @apply
         text-2xl 
@@ -21,7 +22,7 @@
         max-w-[240px] 
         pt-3 
         sm:max-w-lg 
-        md:text-base
+        md:text-lg
     }
 
     .header-layout {
@@ -109,6 +110,31 @@
         pt-4 font-medium line-clamp-2
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .body-container {
+      overflow: scroll;
+      height: 100vh;
+      scroll-behavior: smooth;
+      scroll-snap-type: y mandatory;
+    }
+  
+    .body-section {
+      height: 100vh;
+      scroll-snap-align: start;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .body-section-e {
+      height: 200vh;
+      scroll-snap-align: start;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
 
 .header-color {
     background-color: rgba(23, 43, 77, 1);
