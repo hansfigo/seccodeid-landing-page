@@ -128,9 +128,9 @@
     }
   
     .body-section-e {
-      height: 200vh;
       scroll-snap-align: start;
       align-items: center;
+      position: relative;
       display: flex;
       justify-content: center;
     }
