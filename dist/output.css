@@ -731,16 +731,28 @@ body{
   height: 2rem;
 }
 
+.h-\[140vh\]{
+  height: 140vh;
+}
+
+.h-\[180vh\]{
+  height: 180vh;
+}
+
+.h-\[240vh\]{
+  height: 240vh;
+}
+
 .h-\[250px\]{
   height: 250px;
 }
 
-.h-auto{
-  height: auto;
+.h-\[84vh\]{
+  height: 84vh;
 }
 
-.max-h-\[760px\]{
-  max-height: 760px;
+.h-auto{
+  height: auto;
 }
 
 .w-10{
@@ -1027,9 +1039,9 @@ body{
   }
 
   .body-section-e {
-    height: 200vh;
     scroll-snap-align: start;
     align-items: center;
+    position: relative;
     display: flex;
     justify-content: center;
   }

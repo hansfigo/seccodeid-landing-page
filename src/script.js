@@ -3,6 +3,7 @@ const hamburger = document.getElementById("navbar-anchor");
 const hambIcon = document.getElementById("hamb-ic");
 const crossIcon = document.getElementById("cross-ic");
 const eventList = document.getElementById("event-list");
+const eventMain = document.getElementById("event");
 
 let isClicked = false;
 let isClickedEvent = true;
@@ -28,10 +29,18 @@ function Open() {
 function ShowMore() {
 
   if (isClickedEvent) {
-    eventList.classList.remove("max-h-[760px]")
+    eventMain.classList.add("h-[240vh]")
+    eventMain.classList.remove("h-[180vh]")
+
+    eventList.classList.remove("h-[84vh]")
+    eventList.classList.add("h-[140vh]")
     isClickedEvent = false;
   }else{
-    eventList.classList.add("max-h-[760px]")
+    eventMain.classList.add("h-[180vh]")
+    eventMain.classList.remove("h-[240vh]")
+
+    eventList.classList.remove("h-[140vh]")
+    eventList.classList.add("h-[84vh]")
     isClickedEvent = true;
   }
 }
